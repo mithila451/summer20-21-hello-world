@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML Form</title>
+</head>
+<body>
+	<h1>HTML Form</h1>
+	<!-- form -->
+	<form action="submit.php" method="POST" autocomplete="on" novalidate>
+		<!-- Elements inside form 
+		1. input (button, number, password, date, color, month, week, checkbox, radio, search, range, text, hidden, file, email, tel, ...)
+		2. label
+		3. select
+		4. textarea
+		5. option
+		6. fieldset
+		7. legend
+		8. button
+		9. datalist
+		10. output
+		11. optgroup
+		-->
+
+		<label for="fname">First Name:</label>
+		<input type="text" id="fname" name="fname">
+
+		<br><br>
+
+		<label for="lname">Last Name:</label>
+		<input type="text" id="lname" name="lname">
+
+		<br><br>
+
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email">
+
+		<br><br>
+
+		<input type="radio" id="male" name="gender" value="male">
+		<label for="male">Male</label>
+		<br>
+		<input type="radio" id="female" name="gender" value="female">
+		<label for="female">Female</label>
+		<br>
+		<input type="radio" id="other" name="gender" value="other">
+		<label for="other">Other</label>
+		<br>
+
+		<br><br>
+
+		<input type="checkbox" id="jsc" name="jsc" value="jsc">
+		<label for="jsc">JSC</label>
+
+		<input type="checkbox" id="ssc" name="ssc" value="ssc">
+		<label for="ssc">SSC</label>
+
+		<input type="checkbox" id="hsc" name="hsc" value="hsc">
+		<label for="hsc">HSC</label>
+
+		<br><br>
+
+		<label for="comment">Comments:</label>
+		<textarea id="comment" name="comment" rows="20" cols="40"></textarea>
+
+		<br><br>
+
+		<label for="city">City:</label>
+		<select id="city"><!-- multiple -->
+			<option value="dhaka">Dhaka</option>
+			<option value="rajshahi">Rajshahi</option>
+			<option value="chattagram">Chattagram</option>
+		</select>
+
+		<br><br>
+
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>
